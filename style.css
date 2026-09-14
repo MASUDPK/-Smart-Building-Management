@@ -1,0 +1,969 @@
+/* ================= START: STYLE CSS ================= */
+
+
+/* ================= BASIC RESET START ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f5f1e8;
+
+    color: #333;
+
+    padding: 15px;
+
+}
+
+/* ================= BASIC RESET END ================= */
+
+
+
+
+
+/* ================= HEADER STYLE START ================= */
+
+
+.header {
+
+    background: #ffffff;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+    margin-bottom: 20px;
+
+}
+
+
+.header h1 {
+
+    font-size: 24px;
+
+    color: #2c3e50;
+
+}
+
+
+.header p {
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    color: #666;
+
+}
+
+
+/* ================= HEADER STYLE END ================= */
+
+
+
+
+
+/* ================= PROJECT CARD START ================= */
+
+
+.project-card {
+
+    background: #ffffff;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+    margin-bottom: 20px;
+
+}
+
+
+.project-card h2 {
+
+    color: #8b5e3c;
+
+    margin-bottom: 12px;
+
+}
+
+
+.project-card p {
+
+    margin: 8px 0;
+
+    font-size: 15px;
+
+}
+
+
+/* ================= PROJECT CARD END ================= */
+
+
+
+
+
+
+/* ================= DASHBOARD GRID START ================= */
+
+
+.dashboard {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+
+
+.menu-card {
+
+    background: #ffffff;
+
+    padding: 20px 10px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+    cursor: pointer;
+
+}
+
+
+.menu-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.menu-card p {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* ================= DASHBOARD GRID END ================= */
+
+
+
+
+
+
+/* ================= FOOTER START ================= */
+
+
+.footer {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #666;
+
+}
+
+
+/* ================= FOOTER END ================= */
+
+
+
+
+
+/* ================= MOBILE RESPONSIVE START ================= */
+
+
+@media(max-width:600px){
+
+
+.header h1 {
+
+    font-size: 20px;
+
+}
+
+
+.dashboard {
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.menu-card {
+
+    padding: 15px 8px;
+
+}
+
+
+.menu-card h3 {
+
+    font-size: 26px;
+
+}
+
+
+}
+
+
+/* ================= MOBILE RESPONSIVE END ================= */
+
+
+
+/* ================= END: STYLE CSS ================= */
+
+
+/* ================= START: CONTRACTOR PAYMENT STYLE ================= */
+
+
+.module-card {
+
+    background: #ffffff;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+}
+
+
+.module-card h2 {
+
+    margin-bottom: 15px;
+
+    color: #8b5e3c;
+
+}
+
+
+.module-card input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+}
+
+
+
+.module-card button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+
+table {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+
+}
+
+
+th, td {
+
+    border: 1px solid #ddd;
+
+    padding: 8px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= END: CONTRACTOR PAYMENT STYLE ================= */
+
+
+/* ================= START: WEEKLY LABOR COST STYLE ================= */
+
+
+/* Labor Input Style */
+
+#laborName,
+#laborWork,
+#workDays,
+#dailyWage {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+}
+
+
+
+
+/* Add Labor Button */
+
+#addLaborBtn {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* Labor Table */
+
+#laborList tr {
+
+    background: #ffffff;
+
+}
+
+
+
+
+#laborList td {
+
+    font-size: 13px;
+
+    padding: 8px;
+
+}
+
+
+
+
+
+/* Mobile Adjustment */
+
+@media(max-width:600px){
+
+
+#laborName,
+#laborWork,
+#workDays,
+#dailyWage {
+
+    font-size: 14px;
+
+}
+
+
+
+#addLaborBtn {
+
+    font-size: 14px;
+
+}
+
+
+}
+
+
+/* ================= END: WEEKLY LABOR COST STYLE ================= */
+
+
+
+/* ================= START: PURCHASE MANAGEMENT STYLE ================= */
+
+
+
+/* Purchase Input Style */
+
+
+#productName,
+#supplierName,
+#quantity,
+#purchaseAmount {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+
+}
+
+
+
+
+/* Purchase Button */
+
+
+#addPurchaseBtn {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+/* Purchase Table */
+
+
+#purchaseList td {
+
+
+    font-size: 13px;
+
+    padding: 8px;
+
+
+}
+
+
+
+
+#purchaseList tr {
+
+
+    background: #ffffff;
+
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:600px){
+
+
+
+#productName,
+#supplierName,
+#quantity,
+#purchaseAmount {
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+#addPurchaseBtn {
+
+
+    font-size: 14px;
+
+
+}
+
+
+}
+
+
+
+/* ================= END: PURCHASE MANAGEMENT STYLE ================= */
+
+/* ================= START: EXPENSE LEDGER STYLE ================= */
+
+
+
+/* Expense Input & Select Style */
+
+
+#expenseCategory,
+#expenseDescription,
+#expenseAmount {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+
+}
+
+
+
+
+/* Expense Button */
+
+
+#addExpenseBtn {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+
+/* Expense Table */
+
+
+#expenseList td {
+
+
+    font-size: 13px;
+
+    padding: 8px;
+
+
+}
+
+
+
+#expenseList tr {
+
+
+    background: #ffffff;
+
+
+}
+
+
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:600px){
+
+
+
+#expenseCategory,
+#expenseDescription,
+#expenseAmount {
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+#addExpenseBtn {
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* ================= END: EXPENSE LEDGER STYLE ================= */
+
+/* ================= START: WEEKLY COST REPORT STYLE ================= */
+
+
+
+/* Report Box */
+
+
+.report-box {
+
+
+    background: #f8f5ef;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+
+
+.report-box p {
+
+
+    font-size: 15px;
+
+    margin: 12px 0;
+
+
+}
+
+
+
+
+
+.report-box b {
+
+
+    color: #8b5e3c;
+
+
+}
+
+
+
+
+
+.report-box h3 {
+
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    color: #2c3e50;
+
+
+}
+
+
+
+
+
+
+
+/* Refresh Report Button */
+
+
+#refreshReportBtn {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #8b5e3c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:600px){
+
+
+
+.report-box p {
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+.report-box h3 {
+
+
+    font-size: 16px;
+
+
+}
+
+
+
+#refreshReportBtn {
+
+
+    font-size: 14px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* ================= END: WEEKLY COST REPORT STYLE ================= */
+
+
+/* ================= START: INCOME & EXPENSE REPORT STYLE ================= */
+
+
+/* Income Report Box */
+
+#incomeTotal,
+#reportExpenseTotal,
+#netBalance{
+
+    color:#8b5e3c;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/* Report Buttons */
+
+#addIncomeBtn,
+#pdfReportBtn,
+#whatsappReportBtn,
+#printReportBtn,
+#refreshIncomeReportBtn{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* Add Income */
+
+#addIncomeBtn{
+
+    background:#2e7d32;
+
+    color:#ffffff;
+
+}
+
+
+
+
+/* Export PDF */
+
+#pdfReportBtn{
+
+    background:#c62828;
+
+    color:#ffffff;
+
+}
+
+
+
+
+/* WhatsApp */
+
+#whatsappReportBtn{
+
+    background:#25D366;
+
+    color:#ffffff;
+
+}
+
+
+
+
+/* Print */
+
+#printReportBtn{
+
+    background:#1565c0;
+
+    color:#ffffff;
+
+}
+
+
+
+
+/* Refresh */
+
+#refreshIncomeReportBtn{
+
+    background:#6d4c41;
+
+    color:#ffffff;
+
+}
+
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:600px){
+
+#addIncomeBtn,
+#pdfReportBtn,
+#whatsappReportBtn,
+#printReportBtn,
+#refreshIncomeReportBtn{
+
+    font-size:14px;
+
+}
+
+}
+
+
+
+/* ================= END: INCOME & EXPENSE REPORT STYLE ================= */
