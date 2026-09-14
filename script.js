@@ -1,11 +1,6 @@
 /* ================= START: SCRIPT JS ================= */
 
 
-/* ================= DASHBOARD MENU START ================= */
-
-
-// সব Dashboard Card নির্বাচন করা
-
 // ================= DASHBOARD MENU START =================
 
 const menuCards = document.querySelectorAll(".menu-card");
@@ -14,24 +9,36 @@ menuCards.forEach(function(card){
 
     card.addEventListener("click", function(){
 
-        let moduleName =
-            this.innerText.trim();
+        const moduleName = this.innerText.trim();
 
-        // Contractor Payment
-        if (
-            moduleName.includes(
-                "Contractor Payment"
-            )
-        ) {
+        const modules = document.querySelectorAll(".module-card");
 
-            document.querySelector(
-                ".module-card"
-            ).scrollIntoView({
+        if (moduleName.includes("Contractor Payment")) {
+            modules[0].scrollIntoView({ behavior: "smooth" });
+        }
 
-                behavior: "smooth"
+        else if (moduleName.includes("Weekly Labor Cost")) {
+            modules[1].scrollIntoView({ behavior: "smooth" });
+        }
 
-            });
+        else if (moduleName.includes("Purchase Management")) {
+            modules[2].scrollIntoView({ behavior: "smooth" });
+        }
 
+        else if (moduleName.includes("Expense Ledger")) {
+            modules[3].scrollIntoView({ behavior: "smooth" });
+        }
+
+        else if (moduleName.includes("Weekly Cost Report")) {
+            modules[4].scrollIntoView({ behavior: "smooth" });
+        }
+
+        else if (moduleName.includes("Income & Expense Report")) {
+            modules[5].scrollIntoView({ behavior: "smooth" });
+        }
+
+        else if (moduleName.includes("Add New Project")) {
+            alert("Add New Project module is coming soon.");
         }
 
     });
@@ -39,8 +46,6 @@ menuCards.forEach(function(card){
 });
 
 // ================= DASHBOARD MENU END =================
-
-/* ================= DASHBOARD MENU END ================= */
 
 
 
