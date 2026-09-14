@@ -963,7 +963,102 @@ th, td {
 }
 
 }
+/* ==========================================
+   START: REPORT BUTTON COMPACT STYLE
+   ========================================== */
 
+.module-card button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 8px;
+    min-height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Income & Expense Report buttons */
+#addIncomeBtn,
+#pdfReportBtn,
+#whatsappReportBtn,
+#printReportBtn,
+#refreshIncomeReportBtn,
+#clearTestDataBtn,
+#factoryResetBtn {
+
+    width: calc(50% - 5px);
+    margin: 4px 2px;
+    display: inline-block;
+
+    background: #eeeae3;
+    color: #4f463d;
+}
+
+/* Add Income */
+#addIncomeBtn {
+    background: #dcefdc;
+    color: #285c32;
+}
+
+/* PDF */
+#pdfReportBtn {
+    background: #f1dddd;
+    color: #8a3030;
+}
+
+/* WhatsApp */
+#whatsappReportBtn {
+    background: #d9f1df;
+    color: #18733a;
+}
+
+/* Print */
+#printReportBtn {
+    background: #dce8f5;
+    color: #315d86;
+}
+
+/* Refresh */
+#refreshIncomeReportBtn {
+    background: #e8e1db;
+    color: #665247;
+}
+
+/* Clear Test */
+#clearTestDataBtn {
+    background: #eee5d8;
+    color: #735b43;
+}
+
+/* Factory Reset */
+#factoryResetBtn {
+    background: #e9e0d9;
+    color: #6b4f40;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    #addIncomeBtn,
+    #pdfReportBtn,
+    #whatsappReportBtn,
+    #printReportBtn,
+    #refreshIncomeReportBtn,
+    #clearTestDataBtn,
+    #factoryResetBtn {
+
+        width: calc(50% - 6px);
+        margin: 3px 2px;
+        padding: 9px 5px;
+        min-height: 42px;
+        font-size: 13px;
+    }
+
+}
+
+/* ==========================================
+   END: REPORT BUTTON COMPACT STYLE
+   ========================================== */
 
 
 /* ================= END: INCOME & EXPENSE REPORT STYLE ================= */
