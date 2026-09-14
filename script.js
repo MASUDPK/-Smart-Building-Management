@@ -6,33 +6,39 @@
 
 // সব Dashboard Card নির্বাচন করা
 
+// ================= DASHBOARD MENU START =================
+
 const menuCards = document.querySelectorAll(".menu-card");
-
-
-
-// প্রতিটি Card এ Click Event যোগ করা
 
 menuCards.forEach(function(card){
 
-
     card.addEventListener("click", function(){
 
+        let moduleName =
+            this.innerText.trim();
 
-        let moduleName = this.innerText;
+        // Contractor Payment
+        if (
+            moduleName.includes(
+                "Contractor Payment"
+            )
+        ) {
 
+            document.querySelector(
+                ".module-card"
+            ).scrollIntoView({
 
-        alert(
-            moduleName + 
-            "\n\nModule is ready for development."
-        );
+                behavior: "smooth"
 
+            });
+
+        }
 
     });
 
-
 });
 
-
+// ================= DASHBOARD MENU END =================
 
 /* ================= DASHBOARD MENU END ================= */
 
