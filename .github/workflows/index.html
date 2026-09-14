@@ -1,0 +1,606 @@
+<!-- ================= START: INDEX HTML ================= -->
+
+
+<!-- ================= START: INDEX HTML ================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Building Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER SECTION START ================= -->
+
+<header class="header">
+
+<h1>🏢 Smart Building Management</h1>
+
+<p>Smart Building Management System</p>
+
+</header>
+
+<!-- ================= HEADER SECTION END ================= -->
+
+
+
+
+<!-- ================= PROJECT INFORMATION START ================= -->
+
+<section class="project-card">
+
+<h2>🏗 Jamila Bhavan 1</h2>
+
+<p>
+<b>Owner:</b> Ibrahim Khalil
+</p>
+
+
+<p>
+<b>Location:</b> Model City, Mouchak, Kaliakair, Gazipur
+</p>
+
+
+</section>
+
+<!-- ================= PROJECT INFORMATION END ================= -->
+
+
+
+
+
+<!-- ================= DASHBOARD MENU START ================= -->
+
+
+<section class="dashboard">
+
+
+<div class="menu-card">
+<h3>🏗</h3>
+<p>Contractor Payment</p>
+</div>
+
+
+<div class="menu-card">
+<h3>👷</h3>
+<p>Weekly Labor Cost</p>
+</div>
+
+
+<div class="menu-card">
+<h3>🛒</h3>
+<p>Purchase Management</p>
+</div>
+
+
+<div class="menu-card">
+<h3>📒</h3>
+<p>Expense Ledger</p>
+</div>
+
+
+<div class="menu-card">
+<h3>📊</h3>
+<p>Weekly Cost Report</p>
+</div>
+
+
+<div class="menu-card">
+<h3>📈</h3>
+<p>Income & Expense Report</p>
+</div>
+
+
+<div class="menu-card">
+<h3>➕</h3>
+<p>Add New Project</p>
+</div>
+
+
+</section>
+
+
+<!-- ================= DASHBOARD MENU END ================= -->
+
+
+
+<!-- ================= START: CONTRACTOR PAYMENT MODULE ================= -->
+
+
+<section class="module-card">
+
+
+<h2>🏗 Contractor Payment</h2>
+
+
+<input 
+type="text" 
+id="contractorName"
+placeholder="Contractor Name">
+
+
+<input 
+type="text" 
+id="workDetails"
+placeholder="Work Details">
+
+
+<input 
+type="number" 
+id="paymentAmount"
+placeholder="Payment Amount (Tk)">
+
+
+
+<button id="addPaymentBtn">
+Add Payment
+</button>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Contractor</th>
+
+<th>Work</th>
+
+<th>Amount</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="paymentList">
+
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+<!-- ================= END: CONTRACTOR PAYMENT MODULE ================= -->
+
+<!-- ================= START: WEEKLY LABOR COST MODULE ================= -->
+
+
+<section class="module-card">
+
+
+<h2>👷 Weekly Labor Cost</h2>
+
+
+<input 
+type="text" 
+id="laborName"
+placeholder="Labor Name"
+autocomplete="off">
+
+
+
+<input 
+type="text" 
+id="laborWork"
+placeholder="Work Details"
+autocomplete="off">
+
+
+
+<input 
+type="number" 
+id="workDays"
+placeholder="Number of Days">
+
+
+
+<input 
+type="number" 
+id="dailyWage"
+placeholder="Daily Wage (Tk)">
+
+
+
+<button id="addLaborBtn">
+
+Add Labor Cost
+
+</button>
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Name</th>
+
+<th>Work</th>
+
+<th>Days</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="laborList">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</section>
+
+
+<!-- ================= END: WEEKLY LABOR COST MODULE ================= -->
+
+
+
+
+<section class="module-card">
+
+
+<h2>🛒 Purchase Management</h2>
+
+
+
+<input 
+type="text"
+id="productName"
+placeholder="Material / Product Name"
+autocomplete="off">
+
+
+
+<input
+type="text"
+id="supplierName"
+placeholder="Supplier Name"
+autocomplete="off">
+
+
+
+<input
+type="number"
+id="quantity"
+placeholder="Quantity">
+
+
+
+<input
+type="number"
+id="purchaseAmount"
+placeholder="Purchase Amount (Tk)">
+
+
+
+<button id="addPurchaseBtn">
+
+Add Purchase
+
+</button>
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Product</th>
+
+<th>Supplier</th>
+
+<th>Qty</th>
+
+<th>Amount</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="purchaseList">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= START: EXPENSE LEDGER MODULE ================= -->
+
+
+<section class="module-card">
+
+
+<h2>📒 Expense Ledger</h2>
+
+
+
+<select id="expenseCategory">
+
+
+<option value="">Select Category</option>
+
+<option>Transport</option>
+
+<option>Food</option>
+
+<option>Tools</option>
+
+<option>Electric</option>
+
+<option>Other</option>
+
+
+</select>
+
+
+
+
+
+<input
+type="text"
+id="expenseDescription"
+placeholder="Expense Description"
+autocomplete="off">
+
+
+
+
+
+<input
+type="number"
+id="expenseAmount"
+placeholder="Expense Amount (Tk)">
+
+
+
+
+
+
+<button id="addExpenseBtn">
+
+Add Expense
+
+</button>
+
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Category</th>
+
+<th>Description</th>
+
+<th>Amount</th>
+
+
+</tr>
+
+</thead>
+
+
+
+
+<tbody id="expenseList">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+</section>
+
+
+
+<!-- ================= END: EXPENSE LEDGER MODULE ================= -->
+
+<!-- ================= START: WEEKLY COST REPORT MODULE ================= -->
+
+
+<section class="module-card">
+
+
+<h2>📊 Weekly Cost Report</h2>
+
+
+<div class="report-box">
+
+
+<p>
+🏗 Contractor Payment:
+<b id="contractorTotal">0 Tk</b>
+</p>
+
+
+<p>
+👷 Labor Cost:
+<b id="laborTotal">0 Tk</b>
+</p>
+
+
+<p>
+🛒 Purchase Cost:
+<b id="purchaseTotal">0 Tk</b>
+</p>
+
+
+<p>
+📒 Expense Total:
+<b id="expenseTotal">0 Tk</b>
+</p>
+
+
+
+<hr>
+
+
+<h3>
+Total Weekly Cost:
+<b id="grandTotal">0 Tk</b>
+</h3>
+
+
+</div>
+
+
+<button id="refreshReportBtn">
+
+Refresh Report
+
+</button>
+
+
+
+</section>
+
+
+<!-- ================= END: WEEKLY COST REPORT MODULE ================= -->
+
+<!-- ================= START: INCOME & EXPENSE REPORT ================= -->
+
+<section class="module-card">
+
+<h2>📈 Income & Expense Report</h2>
+
+<div class="report-box">
+
+<p>💰 Total Income:
+<b id="incomeTotal">0 Tk</b>
+</p>
+
+<p>💸 Total Expense:
+<b id="reportExpenseTotal">0 Tk</b>
+</p>
+
+<hr>
+
+<h3>💵 Net Balance:
+<b id="netBalance">0 Tk</b>
+</h3>
+
+</div>
+
+<button id="addIncomeBtn">
+➕ Add Income
+</button>
+
+<button id="pdfReportBtn">
+📄 Export PDF
+</button>
+
+<button id="whatsappReportBtn">
+📱 Share WhatsApp
+</button>
+
+<button id="printReportBtn">
+🖨 Print Report
+</button>
+
+<button id="refreshIncomeReportBtn">
+🔄 Refresh Report
+</button>
+
+<button id="clearTestDataBtn">🧹 Clear Test Data</button>
+
+<button id="factoryResetBtn">🏭 Factory Reset</button>
+
+</section>
+
+<!-- ================= END: INCOME & EXPENSE REPORT ================= -->
+
+<!-- ================= FOOTER START ================= -->
+
+
+<footer class="footer">
+
+<p>
+Smart Building Management System
+</p>
+
+</footer>
+
+
+<!-- ================= FOOTER END ================= -->
+
+
+<!-- ================= FOOTER END ================= -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- ================= END: INDEX HTML ================= -->
+
+
+<!-- ================= END: INDEX HTML ================= -->
